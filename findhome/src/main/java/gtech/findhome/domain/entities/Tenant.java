@@ -15,11 +15,11 @@ import java.util.Set;
 public class Tenant {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
-    private String name;
+    private String idTenant;
+    private String tenantName;
     private String login;
     private String password;
 
-    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "tenant", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Property> properties;
 }

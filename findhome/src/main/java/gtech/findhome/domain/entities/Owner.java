@@ -13,8 +13,8 @@ import java.util.Set;
 @EqualsAndHashCode(of = "id")
 public class Owner {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
-    private String name;
+    private String idOwner;
+    private String ownerName;
     private String login;
     private String password;
 

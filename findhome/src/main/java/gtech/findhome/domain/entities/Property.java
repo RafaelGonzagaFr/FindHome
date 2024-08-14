@@ -13,14 +13,14 @@ import lombok.*;
 public class Property {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String idProperty;
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "id_owner", referencedColumnName = "id", nullable = true, insertable = false, updatable = false)
+    @JoinColumn(name = "id_owner", referencedColumnName = "idOwner", nullable = true, insertable = false, updatable = false)
     private Owner owner;
 
     @ManyToOne
-    @JoinColumn(name = "id_tenant", referencedColumnName = "id", nullable = true, insertable = false, updatable = false)
+    @JoinColumn(name = "id_tenant", referencedColumnName = "idTenant", nullable = true, insertable = false, updatable = false)
     private Tenant tenant;
 }

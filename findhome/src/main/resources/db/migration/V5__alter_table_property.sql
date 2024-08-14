@@ -2,5 +2,5 @@
 ALTER TABLE property
 ADD CONSTRAINT fk_tenant
 FOREIGN KEY (id_tenant)
-REFERENCES tenant(id)
+REFERENCES tenant(id_tenant)
 ON DELETE SET NULL;

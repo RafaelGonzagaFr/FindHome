@@ -2,5 +2,5 @@
 ALTER TABLE property
 ADD CONSTRAINT fk_owner
 FOREIGN KEY (id_owner)
-REFERENCES owner(id)
+REFERENCES owner(id_owner)
 ON DELETE SET NULL;

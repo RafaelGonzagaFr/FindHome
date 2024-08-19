@@ -4,6 +4,7 @@ import gtech.findhome.domain.DTOs.PropertyDTO;
 import gtech.findhome.domain.DTOs.TenantDTO;
 import gtech.findhome.domain.entities.Owner;
 import gtech.findhome.domain.entities.Tenant;
+import gtech.findhome.domain.entities.Property;
 import gtech.findhome.domain.repositories.OwnerRepository;
 import gtech.findhome.domain.repositories.PropertyRepository;
 import gtech.findhome.domain.repositories.TenantRepository;
